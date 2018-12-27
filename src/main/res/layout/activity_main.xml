@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/quantity_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16sp"
+        android:layout_marginTop="16sp"
+        android:text="Quantity"
+        android:textAllCaps="true" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/decrement_Button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="16sp"
+            android:onClick="decrementOfQuantity"
+            android:text="-"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textAllCaps="true"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/quantityValue_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="16sp"
+            android:text="0"
+            android:textAllCaps="true"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/increment_Button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="16sp"
+            android:onClick="incrementOfQuantity"
+            android:text="+"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textAllCaps="true"
+            android:textColor="@color/black" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/price_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16sp"
+        android:layout_marginTop="16sp"
+        android:text="Price"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/priceValue_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="16sp"
+        android:text=""
+        android:textAllCaps="true"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/order_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16sp"
+        android:layout_marginTop="16sp"
+        android:onClick="submitOrder"
+        android:text="Order"
+        android:textAllCaps="true"
+        android:textColor="@color/black" />
+
+</android.support.v7.widget.LinearLayoutCompat>
